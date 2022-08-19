@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", serif;
+  position: relative;
+  font-size: 14px;
+}
+
+.Container {
+  width: 45vw;
+  height: 70vh;
+  display: flex;
+  border-radius: 10px;
+  position: absolute;
+  top: 15vh;
+  overflow: hidden;
+}
+h1 {
+  font-size: 2.3rem;
+  font-family: "Fraunces", serif;
+  line-height: 2rem;
+}
+h2 {
+  text-decoration: none;
+  font-size: 1rem;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.5rem;
+}
+.MainImage {
+  flex: 1 1 320px;
+  background-image: url("./images/image-product-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.ProductInfo {
+  flex: 1 1 255px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #fff;
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: hsl(228, 12%, 48%);
+}
+.price {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 2.5rem;
+}
+
+span {
+  font-size: 1rem;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", serif;
+  text-decoration: line-through;
+}
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  padding: 1rem 3rem;
+  background-color: hsl(158, 36%, 37%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+}
+a:hover {
+  border: 2px dotted #fff;
+  margin: -2px;
+}
+
+a img {
+  padding-right: 0.7rem;
+  color: hsl(158, 36%, 37%);
+}
+
+@media screen and (max-width: 500px) {
+  .Container {
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 90vh;
+    margin-top: 0;
+  }
+}
